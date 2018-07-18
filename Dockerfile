@@ -2,8 +2,8 @@ FROM node:9
 
 WORKDIR /app
 
-RUN npm install -g contentful-cli telnet
-
+RUN npm install -g contentful-cli
+RUN npm install -g telnet
 COPY package.json .
 RUN npm install
 
